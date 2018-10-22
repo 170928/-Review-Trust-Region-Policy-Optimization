@@ -34,6 +34,12 @@
 ![image](https://user-images.githubusercontent.com/40893452/47290170-2fe7cb00-d639-11e8-958c-1e4150f9784b.png)   
 (1) 이런식으로 dictionary도 주고 받을 수 있다.  
 (2) Output in rank 1 :: {'d2' : 42, 'd1' : 55} 와 55 를 출력한다.  
+> send(data, dest, tag)를 사용해서 recv(source, tag)시에 tag 순서를 바꾸는 것으로 수신하는 순서도 정할 수 있다.  
+
+# [Bcast]
+![image](https://user-images.githubusercontent.com/40893452/47290293-b56b7b00-d639-11e8-9602-4249e3664771.png)  
+(1) bcast(data, source) :: source로 부터의 data를 모든 process의 data 값에 넣어준다. recv 같은것 필요 없다.  
+
 
 
 
