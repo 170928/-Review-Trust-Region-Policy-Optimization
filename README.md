@@ -4,13 +4,14 @@
 > OpenAI 가 제공하는 baseline TRPO 코드에 대해서 import 되는 함수들에 대해서도  
 > 추후에 사용할 수 있도록 상세히 서술 정리해보는 페이지.    
 > MPI 사용에 대해서도 간단히 정리할 예정.   
-> https://www.slideshare.net/WoongwonLee/trpo-87165690 이웅원님의 PPT 참조.  
+> TRPO에 대해서는 https://www.slideshare.net/WoongwonLee/trpo-87165690 이웅원님의 PPT 참조.  
 
 
 
 # [MPI 사용법]
 > Reference Site! Thank You
 > https://pythonprogramming.net/mpi-gather-command-mpi4py-python/   
+> 매우매우 좋은 tutorial 사이트입니다.    
 
 ## [Scatter & Gather]
 ![image](https://user-images.githubusercontent.com/40893452/47289310-0b89ef80-d635-11e8-9a32-e5845c828a33.png)  
@@ -26,4 +27,13 @@
 > newData = [2,3,4,5,6]으로 다시 data의 구조대로 array가 만들어진다.  
 
 
-## [Send]
+## [Send & Recv]
+![image](https://user-images.githubusercontent.com/40893452/47289723-12b1fd00-d637-11e8-9144-899a8d84878f.png)   
+(1) "send(data, dest = 1)" :: 보내고자 하는 data와 destination rank number를 나타낸다.   
+(2) "recv(source = 1)" :: send가 있을 때 원하는 rank number로부터의 send를 지정해서 받을 수 있다.   
+![image](https://user-images.githubusercontent.com/40893452/47290170-2fe7cb00-d639-11e8-958c-1e4150f9784b.png)   
+(1) 이런식으로 dictionary도 주고 받을 수 있다.  
+(2) Output in rank 1 :: {'d2' : 42, 'd1' : 55} 와 55 를 출력한다.  
+
+
+
