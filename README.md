@@ -1,3 +1,7 @@
+2018.11.10
+http://www.telesens.co/2018/06/09/efficiently-computing-the-fisher-vector-product-in-trpo/  
+위 사이트 참조 필수
+
 # -Review-Trust-Region-Policy-Optimization
 > Code is from OpenAI 
 [OpenAI baseline Code Review Page] 
